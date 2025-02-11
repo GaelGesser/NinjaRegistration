@@ -1,4 +1,4 @@
-package dev.gesser.NinjaRegistration;
+package dev.gesser.NinjaRegistration.model;
 
 import jakarta.persistence.*;
 
