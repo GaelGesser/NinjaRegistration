@@ -1,6 +1,9 @@
-package dev.gesser.NinjaRegistration;
+package dev.gesser.NinjaRegistration.Ninjas;
 
+import dev.gesser.NinjaRegistration.Missions.MissionModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "tb_ninjas")
@@ -12,6 +15,10 @@ public class NinjaModel {
     private String name;
     private String email;
     private int age;
+
+    @ManyToOne
+    @JoinColumn(name = "mission_id") // Foreign Key
+    private MissionModel mission;
 
     public NinjaModel() {
     }

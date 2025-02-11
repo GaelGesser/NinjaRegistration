@@ -1,4 +1,4 @@
-package dev.gesser.NinjaRegistration;
+package dev.gesser.NinjaRegistration.Ninjas.Controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
